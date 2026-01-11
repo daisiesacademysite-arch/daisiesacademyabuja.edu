@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisies Academy Abuja</title>
+
+    <style>
+        :root {
+            --green: #1f7a3f;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --dark: #1a1a1a;
+            --light-gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: var(--dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .top-bar {
+            background: var(--green);
+            color: var(--white);
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+
+        nav img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--green);
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(
+                rgba(31, 122, 63, 0.7),
+                rgba(31, 122, 63, 0.7)
+            ),
+            url("images/daisies/slides/slide-bgrd-daisies-2.jpg") center/cover no-repeat;
+            color: var(--white);
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: var(--gold);
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: #b8962e;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: var(--green);
+            font-size: 32px;
+        }
+
+        .section-title p {
+            max-width: 800px;
+            margin: 10px auto 0;
+        }
+
+        /* Welcome */
+        .welcome {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* School Levels */
+        .levels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .level-box {
+            background: var(--light-gray);
+            padding: 30px;
+            border-top: 5px solid var(--gold);
+        }
+
+        .level-box h3 {
+            color: var(--green);
+            margin-bottom: 15px;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--green);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .testimonial p {
+            max-width: 900px;
+            margin: auto;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Locations */
+        .locations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .location-box {
+            border: 1px solid #ddd;
+            padding: 25px;
+        }
+
+        .location-box h4 {
+            color: var(--green);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f3d24;
+            color: var(--white);
+            padding: 50px 40px 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        footer h4 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar">
+        Laying a Solid Foundation | Nigerian–British Curriculum
+    </div>
+
+    <nav>
+        <!-- Replace src with actual logo path -->
+        <img src="images/daisies/logo.png" alt="Daisies Academy Logo">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News & Events</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Virtual Tour</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Children Acquire Knowledge and Skills</h1>
+    <p>
+        We prepare our children with the ability to take full active part in further stages of education,
+        adult life, employment and leisure in a rapidly changing world.
+    </p>
+    <a href="#" class="btn">See It in Action</a>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Welcome to Our School</h2>
+    </div>
+
+    <div class="welcome">
+        <p>
+            Welcome to Daisies Academy, a co-educational private institution established in the 2009/2010
+            academic session and certified by the Education Department of the Federal Capital Territory
+            Administration, Abuja.
+        </p>
+        <br>
+        <p>
+            We comprise Early Years, Primary and Secondary School, with a vision of
+            <strong>“Laying a Solid Foundation.”</strong>
+            Our school has maintained high academic standards since inception, producing pupils who gain
+            admission and scholarships into top private colleges in Abuja.
+        </p>
+        <br>
+        <p><strong>Mrs Onyinye Christopher</strong><br>Headteacher</p>
+    </div>
+</section>
+
+<section style="background:#f9faf9;">
+    <div class="section-title">
+        <h2>Our School Sections</h2>
+    </div>
+
+    <div class="levels">
+        <div class="level-box">
+            <h3>Nursery</h3>
+            <p>
+                Childcare and crèche for under 4 years. DISCOVERIES 1 & 2 for ages 2–4 and FOUNDATION for
+                ages 4–5, preparing pupils for primary education.
+            </p>
+        </div>
+
+        <div class="level-box">
+            <h3>Primary</h3>
+            <p>
+                Years Group 1–5 for children aged 5–9 years, exposing pupils to higher learning using
+                materials a year ahead of their class.
+            </p>
+        </div>
+
+        <div class="level-box">
+            <h3>Junior Secondary</h3>
+            <p>
+                Years 7 and 8 only, offering a broad curriculum and preparation for BECE, Cambridge and
+                NECO examinations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial">
+    <p>
+        “Daisies Academy is safe and conducive for learning. My children love it here.
+        I’m really proud of the teachers.” – <strong>Barr. Mrs Oluchi Ogbogoh</strong>
+    </p>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Our Campuses</h2>
+    </div>
+
+    <div class="locations">
+        <div class="location-box">
+            <h4>Early Years</h4>
+            <p>
+                1A Ike Ekweremmadu Street,<br>
+                Congress Court,<br>
+                Sunnyvale
+            </p>
+        </div>
+
+        <div class="location-box">
+            <h4>Primary</h4>
+            <p>
+                Northwall Drive,<br>
+                Sunnyvale
+            </p>
+        </div>
+
+        <div class="location-box">
+            <h4>Secondary</h4>
+            <p>
+                Plot 78, Cadastral Zone C08,<br>
+                Dakwo District, Abuja
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h4>Daisies Academy</h4>
+            <p>
+                Northwall Drive, Sunnyvale Homes<br>
+                Dakwo District, Abuja<br>
+                +234 803 285 5344<br>
+                info@daisiesacademy.com.ng
+            </p>
+        </div>
+
+        <div>
+            <h4>Our School</h4>
+            <a href="#">About Us</a>
+            <a href="#">Headteacher’s Welcome</a>
+            <a href="#">Mission Statement</a>
+            <a href="#">Our Staff</a>
+        </div>
+
+        <div>
+            <h4>News & Events</h4>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+            <a href="#">Calendar</a>
+        </div>
+
+        <div>
+            <h4>Key Information</h4>
+            <a href="#">Admissions Policy</a>
+            <a href="#">Curriculum</a>
+            <a href="#">School Policies</a>
+            <a href="#">School Calendar</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2026. Daisies Academy, Abuja. <br>
+        Designed by Hartfield-DiP
+    </div>
+</footer>
+
+</body>
+</html>
